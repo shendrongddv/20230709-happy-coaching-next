@@ -7,7 +7,7 @@ const Hero1 = () => {
       <div className="container">
         <div className="-mb-7 flex flex-col gap-10 md:flex-row md:items-center md:justify-between">
           <div className="w-full space-y-5 md:w-1/2">
-            <h1 className="font text-7xl font-extrabold text-[#333461] md:leading-snug">
+            <h1 className="font text-5xl font-extrabold leading-snug text-[#333461] md:text-7xl">
               Live life at the full potential
             </h1>
             <p className="text-lg text-[#4A556C]">
@@ -21,14 +21,15 @@ const Hero1 = () => {
             </Button>
           </div>
 
-          <div className="w-full border md:w-1/2">
+          <div className="w-full md:w-1/2">
             <div className="flex items-center justify-center">
               <Image
-                src="/assets/1.jpg"
+                src="/assets/1.1.png"
+                loading="eager"
                 alt="Image"
                 width={462}
                 height={603}
-                className=""
+                className="h-auto w-full"
               />
             </div>
           </div>

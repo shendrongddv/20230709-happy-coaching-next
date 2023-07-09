@@ -34,9 +34,7 @@ const Services = () => {
         />
         <div className="mt-8 grid gap-y-8 md:grid-cols-2">
           <div>
-            <h2 className="text-5xl font-extrabold text-[#333461] md:leading-snug">
-              I can help you in these particular areas.
-            </h2>
+            <h2 className="h2">I can help you in these particular areas.</h2>
           </div>
 
           <div className="space-y-4">

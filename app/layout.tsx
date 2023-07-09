@@ -1,15 +1,16 @@
 import { Kumbh_Sans } from "next/font/google";
 
 import "./globals.css";
+import { cn } from "@/lib/utils";
 
-import NavbarMain from "@/components/navbar-main";
-import FooterMain from "@/components/footer-main";
-import CallToAction from "@/components/call-to-action";
+const fontDisplay = Kumbh_Sans({
+  subsets: ["latin"],
+  variable: "--font-display",
+});
 
 const fontBody = Kumbh_Sans({
   subsets: ["latin"],
-  display: "swap",
-  variable: "--font-body",
+  variable: "--font-display",
 });
 
 export const metadata = {
@@ -23,12 +24,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={fontBody.className}>
-        <NavbarMain />
-        <main>{children}</main>
-        <CallToAction />
-        <FooterMain />
+    <html lang="en" suppressHydrationWarning>
+      <body
+        className={cn(
+          "h-full antialiased",
+          fontDisplay.variable,
+          fontBody.variable
+        )}
+      >
+        {children}
       </body>
     </html>
   );

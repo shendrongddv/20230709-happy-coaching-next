@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 
 const navbarLinks = [
   {
@@ -11,23 +11,23 @@ const navbarLinks = [
   {
     id: 2,
     label: "Services",
-    url: "/",
+    url: "services",
   },
   {
     id: 3,
-    label: "About Us",
-    url: "/",
+    label: "About Me",
+    url: "about-me",
   },
   {
     id: 4,
     label: "Extra Salespage",
-    url: "/",
+    url: "extra-page",
   },
 ];
 
 const NavbarMain = () => {
   return (
-    <header className="px-4">
+    <header className="fixed left-0 top-0 z-50 w-full bg-white px-4">
       <div className="container">
         <div className="flex h-16 items-center justify-between">
           {/* Brand */}
