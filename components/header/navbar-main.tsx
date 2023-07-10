@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "../ui/button";
+import { buttonVariants } from "../ui/button";
+import { cn } from "@/lib/utils";
 
 const navbarLinks = [
   {
@@ -16,12 +17,12 @@ const navbarLinks = [
   {
     id: 3,
     label: "About Me",
-    url: "about-me",
+    url: "about",
   },
   {
     id: 4,
     label: "Extra Salespage",
-    url: "extra-page",
+    url: "extra",
   },
 ];
 
@@ -53,9 +54,17 @@ const NavbarMain = () => {
               </Link>
             ))}
 
-            <Button variant="destructive" size="default">
+            <Link
+              href="guide"
+              className={cn(
+                buttonVariants({
+                  variant: "secondary",
+                  className: "text-white",
+                })
+              )}
+            >
               Get your free guide now
-            </Button>
+            </Link>
           </nav>
         </div>
       </div>

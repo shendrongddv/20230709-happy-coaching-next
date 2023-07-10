@@ -1,5 +1,5 @@
 import FrequentlyAskedQuestions from "@/components/faq";
-import HeroServices from "@/components/hero-services";
+import { HeroServices } from "@/components/hero";
 import Procedures from "@/components/procedures";
 import ServicecBeta from "@/components/services-beta";
 

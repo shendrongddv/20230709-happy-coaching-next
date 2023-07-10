@@ -23,7 +23,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="bg-white px-4 pb-16 pt-32">
+    <section className="bg-white px-4 py-24">
       <div className="container">
         <Image
           src="/assets/shape-1.svg"
@@ -34,16 +34,18 @@ const Services = () => {
         />
         <div className="mt-8 grid gap-y-8 md:grid-cols-2">
           <div>
-            <h2 className="h2">I can help you in these particular areas.</h2>
+            <h2 className="h2 font-extrabold text-primary">
+              I can help you in these particular areas.
+            </h2>
           </div>
 
           <div className="space-y-4">
-            <p className="text-[17px]">
+            <p className="text-lg">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua minim
               veniam.
             </p>
-            <p className="text-[17px]">
+            <p className="text-lg">
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
               quae ab illo inventore veritatis et quasi architecto beatae vitae
@@ -52,9 +54,12 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="mt-4 grid md:grid-cols-3">
+        <div className="mt-16 grid md:grid-cols-3">
           {services?.map((item) => (
-            <div key={item.id} className="p-10">
+            <div
+              key={item.id}
+              className="p-10 transition-colors duration-300 ease-linear first:border hover:bg-neutral-50 hover:first:border-transparent"
+            >
               <Image
                 src={`/icons/${item.img}`}
                 alt={item.title}

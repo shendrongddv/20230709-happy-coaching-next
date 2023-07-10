@@ -1,35 +1,45 @@
 import Image from "next/image";
-import { Button } from "./ui/button";
+import { Button, buttonVariants } from "./ui/button";
+import Link from "next/link";
+import { cn } from "@/lib/utils";
 
 const DontMissIt = () => {
   return (
-    <section className="px-4 py-32">
+    <section className="px-4 pb-24">
       <div className="container">
-        <div className="flex flex-col gap-y-8 md:flex-row md:items-center md:justify-between">
+        <div className="flex flex-col gap-y-16 md:flex-row md:items-center md:justify-between">
           {/* Col */}
-          <div className="w-full md:w-1/2">
-            <h2 className="h2">
-              Don&apos;t miss out on my &quot;Live life at the full
-              potential&quot; free guide
+          <div className="w-full md:w-6/12">
+            <h2 className="h2 font-extrabold text-primary">
+              Don&apos;t miss out on my{" "}
+              <span className="text-secondary">
+                &quot;Live life at the full potential&quot;
+              </span>{" "}
+              free guide
             </h2>
-            <p className="mt-6 text-[22px]">
+            <p className="mt-8 text-xl">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua minim
               veniam.
             </p>
-            <p className="mt-6 text-[17px]">
+            <p className="mt-6 text-lg">
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
               quae ab illo inventore veritatis et quasi architecto beatae vitae
               dicta sunt explicabo.{" "}
             </p>
-            <Button
-              variant="destructive"
-              size="default"
-              className="mt-8 w-full md:w-max"
+            <Link
+              href="guide"
+              className={cn(
+                buttonVariants({
+                  variant: "secondary",
+                  className:
+                    "mt-12 w-full text-white md:min-w-[160px] md:max-w-[200px]",
+                })
+              )}
             >
               Get your free guide now
-            </Button>
+            </Link>
           </div>
 
           {/* Col */}

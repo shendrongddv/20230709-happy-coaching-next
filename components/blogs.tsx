@@ -1,5 +1,8 @@
 import Image from "next/image";
-import { Button } from "./ui/button";
+import Link from "next/link";
+
+import { cn } from "@/lib/utils";
+import { buttonVariants } from "./ui/button";
 
 const blogs = [
   {
@@ -26,7 +29,7 @@ const Blogs = () => {
   return (
     <section className="bg-white px-4 py-24">
       <div className="container flex flex-col items-center">
-        <h2 className="h2 md:w-3/5 md:text-center">
+        <h2 className="h2 font-extrabold text-primary md:w-2/3 md:text-center">
           Stay Motivated, read the weekly blog articles.
         </h2>
 
@@ -55,13 +58,18 @@ const Blogs = () => {
           ))}
         </div>
 
-        <Button
-          variant="destructive"
-          size="default"
-          className="mt-14 w-full md:w-max"
+        <Link
+          href="guide"
+          className={cn(
+            buttonVariants({
+              variant: "secondary",
+              className:
+                "mt-16 w-full text-white md:min-w-[160px] md:max-w-[200px]",
+            })
+          )}
         >
           Read more blogs
-        </Button>
+        </Link>
       </div>
     </section>
   );
