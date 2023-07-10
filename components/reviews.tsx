@@ -27,7 +27,9 @@ const Reviews = () => {
   return (
     <section className="bg-[#FAF8F6] px-4 pb-52 pt-28">
       <div className="container">
-        <h2 className="h2 md:w-1/2">Hear out what my clients say about me.</h2>
+        <h2 className="h2 font-extrabold text-primary md:w-1/2">
+          Hear out what my clients say about me.
+        </h2>
 
         {/* Wrapper */}
         <div className="mt-9 grid gap-9 md:grid-cols-3">

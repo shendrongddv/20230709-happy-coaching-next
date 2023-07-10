@@ -106,3 +106,7 @@
 .my-shadow:hover {
   box-shadow: 0px 96px 96px 0px rgba(177, 186, 200, 0.12);
 }
+
+.my-shadow-1 {
+  box-shadow: 0px 48px 72px 0px rgba(177, 186, 200, 0.12);
+}
