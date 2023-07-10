@@ -10,7 +10,7 @@ const CallToAction = () => {
             <h2 className="text-3xl font-extrabold text-[#333461]">
               Get notified when I publish new articles
             </h2>
-            <p className="mt-4 text-xl text-[#4A556C]">
+            <p className="mt-4 text-xl">
               Stay up to date with the latest news, announcements, and articles.
             </p>
           </div>

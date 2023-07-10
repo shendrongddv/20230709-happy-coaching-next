@@ -1,12 +1,16 @@
-import React from "react";
+import FrequentlyAskedQuestions from "@/components/faq";
+import HeroServices from "@/components/hero-services";
+import Procedures from "@/components/procedures";
+import ServicecBeta from "@/components/services-beta";
 
 const ServicesPage = () => {
   return (
-    <section className="flex min-h-screen items-center justify-center px-4 text-center">
-      <div className="container">
-        <h1 className="font-display text-6xl font-extrabold">Services</h1>
-      </div>
-    </section>
+    <>
+      <HeroServices />
+      <ServicecBeta />
+      <Procedures />
+      <FrequentlyAskedQuestions />
+    </>
   );
 };
 

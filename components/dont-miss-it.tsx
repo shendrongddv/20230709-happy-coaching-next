@@ -12,12 +12,12 @@ const DontMissIt = () => {
               Don&apos;t miss out on my &quot;Live life at the full
               potential&quot; free guide
             </h2>
-            <p className="mt-6 text-[22px] text-[#4A556C]">
+            <p className="mt-6 text-[22px]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua minim
               veniam.
             </p>
-            <p className="mt-6 text-[17px] text-[#4A556C]">
+            <p className="mt-6 text-[17px]">
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
               quae ab illo inventore veritatis et quasi architecto beatae vitae

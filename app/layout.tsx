@@ -10,7 +10,7 @@ const fontDisplay = Kumbh_Sans({
 
 const fontBody = Kumbh_Sans({
   subsets: ["latin"],
-  variable: "--font-display",
+  variable: "--font-body",
 });
 
 export const metadata = {
@@ -27,7 +27,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "h-full antialiased",
+          "h-full text-[#4a556c] antialiased",
           fontDisplay.variable,
           fontBody.variable
         )}

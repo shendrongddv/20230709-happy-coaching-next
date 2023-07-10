@@ -26,7 +26,7 @@ const Blogs = () => {
   return (
     <section className="bg-white px-4 py-24">
       <div className="container flex flex-col items-center">
-        <h2 className="h2 md:w-1/2 md:text-center">
+        <h2 className="h2 md:w-3/5 md:text-center">
           Stay Motivated, read the weekly blog articles.
         </h2>
 
@@ -49,7 +49,7 @@ const Blogs = () => {
                 <h3 className="text-2xl font-bold text-[#333461]">
                   {item.title}
                 </h3>
-                <p className="mt-3 text-[#4A556C]">{item.text}</p>
+                <p className="mt-3">{item.text}</p>
               </div>
             </div>
           ))}

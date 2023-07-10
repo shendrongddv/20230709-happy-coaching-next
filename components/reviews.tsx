@@ -27,14 +27,14 @@ const Reviews = () => {
   return (
     <section className="bg-[#FAF8F6] px-4 pb-52 pt-28">
       <div className="container">
-        <h2 className="h2 md:w-5/12">Hear out what my clients say about me.</h2>
+        <h2 className="h2 md:w-1/2">Hear out what my clients say about me.</h2>
 
         {/* Wrapper */}
         <div className="mt-9 grid gap-9 md:grid-cols-3">
           {/* Col */}
           {reviews?.map((item) => (
             <div key={item.id} className="my-shadow bg-white p-12">
-              <p className="text-2xl text-[#4A556C]">&quot;{item.text}&quot;</p>
+              <p className="text-2xl">&quot;{item.text}&quot;</p>
               <h3 className="mt-4 text-2xl font-bold text-[#333461]">
                 {item.name}
               </h3>

@@ -19,42 +19,27 @@ const services = [
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua minim veniam.",
     img: "service-3.svg",
   },
+  {
+    id: 3,
+    title: "Online course",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua minim veniam.",
+    img: "service-3.svg",
+  },
 ];
 
-const Services = () => {
+const ServicecBeta = () => {
   return (
-    <section className="bg-white px-4 pb-16 pt-32">
-      <div className="container">
-        <Image
-          src="/assets/shape-1.svg"
-          alt="Image"
-          width={101}
-          height={17}
-          className="h-4 w-auto"
-        />
-        <div className="mt-8 grid gap-y-8 md:grid-cols-2">
-          <div>
-            <h2 className="h2">I can help you in these particular areas.</h2>
-          </div>
+    <section className="bg-white px-4 pb-10 pt-28">
+      <div className="container flex flex-col items-center">
+        <h2 className="h2 font-extrabold text-primary md:w-1/2 md:text-center">
+          I can help you in these particular areas.
+        </h2>
 
-          <div className="space-y-4">
-            <p className="text-[17px]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua minim
-              veniam.
-            </p>
-            <p className="text-[17px]">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo.
-            </p>
-          </div>
-        </div>
-
-        <div className="mt-4 grid md:grid-cols-3">
+        {/* Grid */}
+        <div className="mt-20 grid gap-5 md:w-4/5 md:grid-cols-2">
+          {/* Col */}
           {services?.map((item) => (
-            <div key={item.id} className="p-10">
+            <div key={item.id} className="border p-10">
               <Image
                 src={`/icons/${item.img}`}
                 alt={item.title}
@@ -74,4 +59,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default ServicecBeta;

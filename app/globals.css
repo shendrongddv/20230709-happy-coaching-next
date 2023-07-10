@@ -19,10 +19,10 @@
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 239 31% 29%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 40% 96.1%;
+    --secondary: 170 69% 40%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
     --accent: 210 40% 96.1%;
@@ -77,8 +77,29 @@
   }
 }
 
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  @apply leading-tight md:leading-snug;
+}
+
+.h1 {
+  @apply text-5xl md:text-7xl;
+}
+
 .h2 {
-  @apply text-4xl font-extrabold text-[#333461] md:text-5xl md:leading-snug;
+  @apply text-4xl md:text-5xl;
+}
+
+.h3 {
+  @apply text-3xl md:text-4xl;
+}
+
+.h4 {
+  @apply text-2xl md:text-3xl;
 }
 
 .my-shadow:first-child,
