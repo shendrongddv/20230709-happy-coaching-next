@@ -1,7 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import { buttonVariants } from "../ui/button";
+
 import { cn } from "@/lib/utils";
+import { buttonVariants } from "../ui/button";
+import { NavbarToggle } from "./navbar-toggle";
 
 const navbarLinks = [
   {
@@ -66,6 +68,11 @@ const NavbarMain = () => {
               Get your free guide now
             </Link>
           </nav>
+
+          {/* Toggle */}
+          <div className="flex md:hidden">
+            <NavbarToggle />
+          </div>
         </div>
       </div>
     </header>
