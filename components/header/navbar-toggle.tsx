@@ -46,7 +46,7 @@ export function NavbarToggle() {
           <Menu className="h-4 w-4" />
         </Button>
       </SheetTrigger>
-      <SheetContent>
+      <SheetContent side={"top"}>
         <SheetHeader>
           <SheetTitle></SheetTitle>
           <SheetDescription></SheetDescription>
