@@ -19,15 +19,50 @@ const services = [
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua minim veniam.",
     img: "service-3.svg",
   },
+  {
+    id: 4,
+    title: "Online course",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua minim veniam.",
+    img: "service-3.svg",
+  },
 ];
 
 export const ServiceCardA = () => {
+  const items = services.slice(0, 3);
+
+  return (
+    <>
+      {items?.map((item) => (
+        <div
+          key={item.id}
+          className="p-10 transition-colors duration-300 ease-linear first:border hover:bg-neutral-50 hover:first:border-transparent"
+        >
+          <Image
+            src={`/icons/${item.img}`}
+            alt={item.title}
+            width={72}
+            height={72}
+            className="h-[72px] w-[72px]"
+          />
+          <h3 className="mt-8 text-2xl font-bold text-[#041434]">
+            {item.title}
+          </h3>
+          <p className="mt-4">{item.text}</p>
+        </div>
+      ))}
+    </>
+  );
+};
+
+export const ServiceCardB = () => {
+  const items = services;
+
   return (
     <>
       {services?.map((item) => (
         <div
           key={item.id}
-          className="p-10 transition-colors duration-300 ease-linear first:border hover:bg-neutral-50 hover:first:border-transparent"
+          className="flex flex-col items-start border p-10 text-start"
         >
           <Image
             src={`/icons/${item.img}`}
