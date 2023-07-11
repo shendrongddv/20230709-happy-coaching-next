@@ -75,9 +75,17 @@ export function NavbarToggle() {
 
         <SheetFooter>
           <SheetClose asChild>
-            <Button variant="secondary" type="submit" className="text-white">
+            <Link
+              href="guide"
+              className={cn(
+                buttonVariants({
+                  variant: "secondary",
+                  className: "text-white",
+                })
+              )}
+            >
               Get your free guide now
-            </Button>
+            </Link>
           </SheetClose>
         </SheetFooter>
       </SheetContent>
