@@ -45,7 +45,7 @@ const DontMissIt = () => {
           {/* Col */}
           <div className="w-full max-md:pl-8 md:w-max">
             <Image
-              src="/assets/3.png"
+              src="/assets/hero-guide.png"
               alt="Image"
               width={478}
               height={616}

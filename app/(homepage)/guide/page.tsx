@@ -8,7 +8,14 @@ const GuidePage = () => {
   return (
     <>
       <HeroGuide />
-      <CTABeta />
+
+      {/* CTA */}
+      <section className="px-4 py-16">
+        <div className="container">
+          <CTABeta />
+        </div>
+      </section>
+      {/* ./ CTA */}
       <Reviews />
       <HowItsWork />
       <CTAImageBeta />

@@ -5,33 +5,58 @@ import { Button, buttonVariants } from "./ui/button";
 import { Input } from "./ui/input";
 import { Star } from "lucide-react";
 
+//  CTA Text Alpha
+// -> About Page -> after FAQ Accordion
+export const CTAAlpha = () => {
+  return (
+    <div className="flex w-full flex-col items-center rounded-2xl bg-[#FAF8F6] p-8">
+      <h2 className="text-xl font-bold text-primary">Still have questions?</h2>
+      <p className="mt-3 text-lg">
+        Can’t find the answer you’re looking for? Please chat to our friendly
+        team.
+      </p>
+
+      <Link
+        href="/"
+        className={cn(
+          buttonVariants({
+            variant: "secondary",
+            className: "mt-8 w-full text-white md:w-max",
+          })
+        )}
+      >
+        Get in touch
+      </Link>
+    </div>
+  );
+};
+
 // CTA Text Beta
+// -> Guide Page -> after Hero
 export const CTABeta = () => {
   return (
-    <section className="px-4 py-16">
-      <div className="container">
-        <div className="flex flex-col gap-10 md:flex-row md:items-center md:justify-between">
-          <div className="w-full md:w-4/5">
-            <span className="font-semibold">Testimonials</span>
-            <h2 className="h2 font-extrabold text-primary">
-              Results that speak for themselves
-            </h2>
-          </div>
-
-          <Link
-            href="/"
-            className={cn(
-              buttonVariants({
-                variant: "secondary",
-                className: "w-full text-white md:w-max",
-              })
-            )}
-          >
-            Get started
-          </Link>
+    <>
+      <div className="flex flex-col gap-10 md:flex-row md:items-center md:justify-between">
+        <div className="w-full md:w-4/5">
+          <span className="font-semibold">Testimonials</span>
+          <h2 className="h2 font-extrabold text-primary">
+            Results that speak for themselves
+          </h2>
         </div>
+
+        <Link
+          href="/"
+          className={cn(
+            buttonVariants({
+              variant: "secondary",
+              className: "w-full text-white md:w-max",
+            })
+          )}
+        >
+          Get started
+        </Link>
       </div>
-    </section>
+    </>
   );
 };
 
@@ -81,40 +106,43 @@ export const CTAImageBeta = () => {
   );
 };
 
-const CallToAction = () => {
+// CTA Form
+// -> before Footer
+export const CTAForm = () => {
   return (
-    <section className="bg-[#FAF8F6] px-4 py-12">
-      <div className="container">
-        <div className="flex flex-col gap-10 md:flex-row md:items-center md:justify-between">
-          <div className="w-full md:flex-1">
-            <h2 className="text-3xl font-extrabold text-[#333461]">
-              Get notified when I publish new articles
-            </h2>
-            <p className="mt-4 text-xl">
-              Stay up to date with the latest news, announcements, and articles.
-            </p>
-          </div>
+    <>
+      <div className="flex flex-col gap-12 md:flex-row md:items-center md:justify-between">
+        <div className="w-full md:flex-1">
+          <h2 className="text-3xl font-extrabold text-[#333461]">
+            Get notified when I publish new articles
+          </h2>
+          <p className="mt-6 text-xl">
+            Stay up to date with the latest news, announcements, and articles.
+          </p>
+        </div>
 
-          <div className="w-full md:w-1/3">
-            <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-center">
-              <Input
-                type="email"
-                placeholder="Enter your email"
-                className="w-full"
-              ></Input>
-              <Button
-                variant="destructive"
-                size="default"
-                className="w-full md:w-max"
-              >
-                Subscribe
-              </Button>
-            </div>
+        <div className="w-full md:w-1/3">
+          <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-center">
+            <Input
+              type="email"
+              placeholder="Enter your email"
+              className="w-full"
+            ></Input>
+
+            <Link
+              href="/"
+              className={cn(
+                buttonVariants({
+                  variant: "secondary",
+                  className: "w-full text-white md:w-max",
+                })
+              )}
+            >
+              Subscribe
+            </Link>
           </div>
         </div>
       </div>
-    </section>
+    </>
   );
 };
-
-export default CallToAction;

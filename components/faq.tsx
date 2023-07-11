@@ -1,3 +1,4 @@
+import { CTAAlpha } from "./call-to-action";
 import FAQCard from "./faq-card";
 import { Button } from "./ui/button";
 
@@ -19,22 +20,7 @@ const FrequentlyAskedQuestions = () => {
         </div>
 
         {/* # */}
-        <div className="flex w-full flex-col items-center rounded-2xl bg-[#FAF8F6] p-8">
-          <h2 className="text-xl font-bold text-primary">
-            Still have questions?
-          </h2>
-          <p className="mt-3 text-lg">
-            Can’t find the answer you’re looking for? Please chat to our
-            friendly team.
-          </p>
-          <Button
-            variant="destructive"
-            size="default"
-            className="mt-8 w-full md:w-48"
-          >
-            Get in touch
-          </Button>
-        </div>
+        <CTAAlpha />
       </div>
     </section>
   );
